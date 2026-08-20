@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porque o BalanceOil+ Funciona — Balanced Test</title>
+<meta name="description" content="Todo o ómega-3 é igual? Descubra a diferença entre cápsulas comuns e o BalanceOil+ — com ciência, imagens e resultados comprovados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A1628;--navy-mid:#0F1E38;--gold:#C8A84E;--gold-light:#E8D48A;
+  --teal:#1A7A6D;--green:#2D8B4E;--green-light:#4AAF6E;--red:#C23B22;
+  --cream:#F5F0E8;--white:#FFFFFF;--text-muted:#6A6A6A;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'DM Sans',sans-serif;
+  --radius:12px;--transition:.3s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--navy);color:#ccc;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+
+/* NAV */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;position:sticky;top:0;z-index:100;background:rgba(10,22,40,.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(200,168,78,.08)}
+.nav a{text-decoration:none;font-weight:600;font-size:.85rem;color:rgba(255,255,255,.5);transition:color var(--transition)}
+.nav a:hover{color:var(--gold)}
+.nav .brand{font-family:var(--font-display);font-weight:700;font-size:1rem;color:var(--white)}
+
+/* VISUAL SLIDE — the core component */
+.vis{width:100%;position:relative;overflow:hidden}
+.vis img{width:100%;height:auto;display:block}
+
+/* TEXT BRIDGE between slides */
+.bridge{padding:48px 24px;max-width:720px;margin:0 auto;text-align:center}
+.bridge h2{font-family:var(--font-display);font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;color:var(--white);margin-bottom:12px;line-height:1.3}
+.bridge h2 em{color:var(--gold);font-style:normal}
+.bridge p{font-size:.95rem;color:rgba(255,255,255,.45);max-width:560px;margin:0 auto;line-height:1.7}
+
+/* DIVIDER */
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(200,168,78,.15),transparent);margin:0}
+
+/* PRODUCT SECTION */
+.product-section{padding:64px 24px;max-width:900px;margin:0 auto;display:flex;align-items:center;gap:48px}
+.product-section .prod-img{flex:0 0 240px;text-align:center}
+.product-section .prod-img img{max-height:320px;margin:0 auto;filter:drop-shadow(0 20px 40px rgba(200,168,78,.25));animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.product-section .prod-text{flex:1}
+.product-section .prod-text h2{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--white);margin-bottom:12px;line-height:1.3}
+.product-section .prod-text h2 em{color:var(--gold);font-style:normal}
+.product-section .prod-text p{font-size:.92rem;color:rgba(255,255,255,.5);margin-bottom:16px;line-height:1.7}
+.badges{display:flex;gap:10px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:5px;background:rgba(200,168,78,.08);border:1px solid rgba(200,168,78,.12);border-radius:50px;padding:5px 14px;font-size:.75rem;color:var(--gold);font-weight:600}
+
+/* TRUST STRIP */
+.trust-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:48px 24px;max-width:900px;margin:0 auto}
+.trust-item{text-align:center;padding:24px 16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);border-radius:var(--radius)}
+.trust-item .t-num{font-family:var(--font-display);font-size:1.4rem;font-weight:900;color:var(--gold);margin-bottom:4px}
+.trust-item .t-label{font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.4}
+
+/* CTA */
+.cta{padding:64px 24px;text-align:center;position:relative}
+.cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(200,168,78,.06),transparent 60%)}
+.cta h2{font-family:var(--font-display);font-size:clamp(1.4rem,3.5vw,2rem);font-weight:700;color:var(--white);margin-bottom:12px;position:relative}
+.cta h2 em{color:var(--gold);font-style:normal}
+.cta p{font-size:.95rem;color:rgba(255,255,255,.45);max-width:480px;margin:0 auto 32px;position:relative}
+.cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy);font-weight:700;font-size:.95rem;padding:14px 32px;border-radius:50px;text-decoration:none;transition:all var(--transition);box-shadow:0 4px 20px rgba(200,168,78,.3)}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,168,78,.45)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,.6);font-weight:600;font-size:.95rem;padding:14px 32px;border-radius:50px;text-decoration:none;border:1.5px solid rgba(255,255,255,.12);transition:all var(--transition)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);color:var(--white)}
+
+/* FOOTER */
+.footer{padding:24px;text-align:center;border-top:1px solid rgba(255,255,255,.04)}
+.footer p{font-size:.72rem;color:rgba(255,255,255,.2);line-height:1.6}
+
+/* FADE */
+.fade{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.fade.in{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .bridge{padding:36px 20px}
+  .product-section{flex-direction:column;text-align:center;padding:48px 20px}
+  .product-section .prod-img{flex:none}
+  .badges{justify-content:center}
+  .trust-strip{grid-template-columns:1fr;padding:36px 20px}
+  .cta-buttons{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html">← Voltar</a>
+  <span class="brand">Balanced Test</span>
+</nav>
+
+<!-- ═══ HERO — Slide 1: Full impact, zero text wall ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_01.jpg" alt="Todo o ómega-3 é igual? O rótulo mostra o que entra. A absorção mostra o que o corpo usa." loading="eager">
+</section>
+
+<!-- Bridge -->
+<div class="bridge fade">
+  <p>Quando compramos ómega-3, a maioria olha para a quantidade no rótulo. Mas a verdadeira questão é outra — e a resposta pode surpreendê-lo.</p>
+</div>
+<div class="divider"></div>
+
+<!-- ═══ THREE FORMS — Slide 2 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_02.jpg" alt="Três vias possíveis para o seu corpo: Cápsula EE, Cápsula TG, e BalanceOil" loading="lazy">
+</section>
+
+<!-- ═══ SAME ENTRY POINT — Slide 3 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_03.jpg" alt="O mesmo ponto de entrada. Resultados diferentes." loading="lazy">
+</section>
+
+<div class="bridge fade">
+  <h2>A estrutura da molécula dita a <em>sobrevivência</em></h2>
+  <p>O caminho começa igual para todas as formas químicas. Mas a partir do instante em que entram no sistema digestivo, a diferença torna-se dramática.</p>
+</div>
+<div class="divider"></div>
+
+<!-- ═══ DIGESTION — Slide 4 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_04.jpg" alt="A digestão não garante a absorção total. Cápsula EE fragmenta, TG perde eficiência, BalanceOil mantém integridade." loading="lazy">
+</section>
+
+<!-- ═══ POLYPHENOL SHIELD — Slide 5 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_05.jpg" alt="O Escudo Protetor: Polifenóis Antioxidantes" loading="lazy">
+</section>
+
+<div class="bridge fade">
+  <h2>A forma química dita a <em>passagem</em></h2>
+  <p>Forma química + proteção antioxidante = biodisponibilidade. É esta equação que separa o BalanceOil de todo o resto.</p>
+</div>
+<div class="divider"></div>
+
+<!-- ═══ CHEMICAL FORM — Slide 6 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_06.jpg" alt="A forma química dita a passagem. EE sofre perdas, TG é parcial, BalanceOil maximiza estabilidade." loading="lazy">
+</section>
+
+<!-- ═══ ABSORPTION PERCENTAGES — Slide 7 (the money shot) ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_07.jpg" alt="EE: 30% absorvido. TG: até 70%. BalanceOil: até 97% absorvido." loading="lazy">
+</section>
+
+<!-- ═══ CELL MEMBRANE — Slide 8 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_08.jpg" alt="O destino final não é o estômago. É a membrana celular." loading="lazy">
+</section>
+
+<div class="bridge fade">
+  <h2>O que conta não é só o que entra.<br><em>É o que o corpo aproveita.</em></h2>
+  <p>Dois produtos podem ter a mesma quantidade de ómega-3 no rótulo, mas entregar resultados completamente diferentes. A diferença está na forma, proteção e capacidade de absorção.</p>
+</div>
+<div class="divider"></div>
+
+<!-- ═══ SUMMARY BARS — Slide 9 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_09.jpg" alt="EE: 30% absorvido. TG: até 70%. BalanceOil: até 97% absorvido." loading="lazy">
+</section>
+
+<!-- ═══ PRACTICAL CONCENTRATION — Slide 10 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_10.jpg" alt="10 ml de BalanceOil equivalem a 3 a 6 cápsulas comuns." loading="lazy">
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ PRODUCT SHOWCASE ═══ -->
+<section class="product-section fade">
+  <div class="prod-img">
+    <img src="https://zinzinowebstorage.blob.core.windows.net/productimages/large/300000.png" alt="BalanceOil+ 300ml" loading="lazy">
+  </div>
+  <div class="prod-text">
+    <h2>BalanceOil+ — <em>Feito para chegar onde importa.</em></h2>
+    <p>Peixe selvagem de pequeno porte + azeite extra virgem de colheita precoce com até 30× mais polifenóis. Fórmula sinérgica que replica o mecanismo natural de proteção dos ómega-3 no peixe selvagem.</p>
+    <p>Resultado comprovado em 120 dias com teste de sangue antes e depois.</p>
+    <div class="badges">
+      <span class="badge">🐟 Peixe selvagem</span>
+      <span class="badge">🫒 Polifenóis 750+ mg/kg</span>
+      <span class="badge">☀️ Vitamina D3</span>
+      <span class="badge">🛡️ 18 alegações EFSA</span>
+      <span class="badge">🧪 1M+ testes realizados</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══ TRUST STRIP ═══ -->
+<div class="trust-strip fade">
+  <div class="trust-item">
+    <div class="t-num">1.000.000+</div>
+    <div class="t-label">Testes de sangue realizados e analisados globalmente</div>
+  </div>
+  <div class="trust-item">
+    <div class="t-num">Vitas Lab — Oslo</div>
+    <div class="t-label">Laboratório independente GMP com 30 anos de experiência</div>
+  </div>
+  <div class="trust-item">
+    <div class="t-num">120 dias</div>
+    <div class="t-label">Para alcançar rácio ómega-6:3 abaixo de 3:1 em todas as regiões testadas</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ═══ CLOSING SLIDE — Slide 11 ═══ -->
+<section class="vis fade">
+  <img src="porque-balanceoil-images/slide_11.jpg" alt="Não compre apenas ómega-3. Escolha absorção. BalanceOil — Feito para chegar onde importa." loading="lazy">
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta fade">
+  <h2>Pronto para fazer a <em>escolha certa?</em></h2>
+  <p>Faça o BalanceTest, descubra o seu rácio, e comece a transformação com o suplemento que prova que funciona.</p>
+  <div class="cta-buttons">
+    <a href="balanced-test-produtos.html" class="btn-gold">Ver Produtos e Preços →</a>
+    <a href="index.html" class="btn-ghost">← Página Principal</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Balanced Test — As alegações de saúde são suportadas pela EFSA. Este conteúdo não substitui aconselhamento médico.</p>
+</footer>
+
+<script>
+// Fade-in on scroll
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
+},{threshold:0.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
