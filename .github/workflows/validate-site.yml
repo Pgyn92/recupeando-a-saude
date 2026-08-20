@@ -1,0 +1,23 @@
+name: Validate site
+
+on:
+  push:
+    branches:
+      - main
+      - redesign-editorial
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate public pages and local links
+        run: python scripts/validate_site.py
