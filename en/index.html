@@ -1,0 +1,2093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balanced Test — Take back control of your health</title>
+<meta name="description" content="97% of people taking omega-3 remain clinically deficient. Find out why — and what science has proven actually works.">
+<meta property="og:title" content="Balanced Test — Take back control of your health">
+<meta property="og:description" content="97% of people taking omega-3 remain clinically deficient. Find out why — and what science has proven actually works.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://balancedtest.pt/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Balanced Test — Take back control of your health">
+<meta name="twitter:description" content="97% of people taking omega-3 remain clinically deficient. Find out why — and what science has proven actually works.">
+<meta property="og:image" content="https://recuperandoasaude.pt/images/og-image-en.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://recuperandoasaude.pt/images/og-image-en.png">
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','XXXXXXXXXXXXXXX');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"/></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   CSS VARIABLES & RESET
+   ============================================ */
+:root {
+  --cream: #F5F0E8;
+  --cream-dark: #EDE6D8;
+  --navy: #0A1628;
+  --navy-light: #142240;
+  --gold: #C8A84E;
+  --gold-light: #E8D48A;
+  --amber: #D4890A;
+  --red-danger: #C23B22;
+  --red-soft: #E8A090;
+  --green-health: #2D8B4E;
+  --green-light: #4AAF6E;
+  --green-glow: #3DDC84;
+  --teal: #1A7A6D;
+  --text-dark: #1A1A1A;
+  --text-body: #3A3A3A;
+  --text-muted: #6A6A6A;
+  --white: #FFFFFF;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.14);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  background: var(--cream);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+.container-wide { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-pad { padding: 80px 0; }
+.section-pad-lg { padding: 100px 0; }
+
+@media (max-width: 768px) {
+  .section-pad { padding: 56px 0; }
+  .section-pad-lg { padding: 72px 0; }
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.headline-xl {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.headline-lg {
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.headline-md {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 700;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  font-weight: 400;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.label-sm {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.text-gold { color: var(--gold); }
+.text-red { color: var(--red-danger); }
+.text-green { color: var(--green-health); }
+.text-navy { color: var(--navy); }
+.text-white { color: var(--white); }
+.text-center { text-align: center; }
+.text-muted { color: var(--text-muted); }
+
+.highlight-box {
+  background: var(--red-danger);
+  color: var(--white);
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+/* ============================================
+   CTA BUTTONS
+   ============================================ */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--green-health);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 18px 40px;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition);
+  box-shadow: 0 4px 20px rgba(45, 139, 78, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.5s ease;
+}
+.btn-primary:hover {
+  background: #238B4A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(45, 139, 78, 0.45);
+}
+.btn-primary:hover::after { left: 100%; }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--navy);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 60px;
+  border: 2px solid var(--navy);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+.btn-secondary:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* ============================================
+   STICKY CTA BAR
+   ============================================ */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--navy);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 1000;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 -4px 30px rgba(0,0,0,0.2);
+}
+.sticky-cta.active { transform: translateY(0); }
+.sticky-cta .cta-text {
+  color: rgba(255,255,255,0.85);
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: none;
+}
+.sticky-cta .btn-primary {
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+@media (min-width: 600px) {
+  .sticky-cta .cta-text { display: block; }
+}
+
+/* ============================================
+   TOP BAR
+   ============================================ */
+.top-bar {
+  background: var(--navy);
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.top-bar strong { color: var(--gold-light); }
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  background: var(--cream);
+  padding: 8px 0 4px;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, var(--cream));
+  pointer-events: none;
+}
+
+.hero .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.hero .brand-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--green-health);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .brand-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--white);
+}
+.hero .brand-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(194, 59, 34, 0.08);
+  border: 1px solid rgba(194, 59, 34, 0.2);
+  border-radius: 40px;
+  padding: 6px 16px;
+  margin-bottom: 24px;
+}
+.hero .eyebrow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--red-danger);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+.hero .eyebrow-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--red-danger);
+  letter-spacing: 0.04em;
+}
+
+.hero h1 { margin-bottom: 4px; }
+.hero h1 .hero-em {
+  color: var(--red-danger);
+  font-style: italic;
+}
+
+.hero .subtitle { margin-bottom: 4px; max-width: 600px; }
+
+/* Video placeholder */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--navy);
+  aspect-ratio: 16/9;
+  margin: 36px 0 28px;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+}
+.video-wrap .video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(10,22,40,0.85), rgba(10,22,40,0.7));
+  transition: background 0.3s ease;
+}
+.video-wrap:hover .video-overlay {
+  background: linear-gradient(135deg, rgba(10,22,40,0.75), rgba(10,22,40,0.6));
+}
+.play-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--green-health);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 0 rgba(45, 139, 78, 0.4);
+  animation: pulse-play 2s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+.video-wrap:hover .play-btn { transform: scale(1.08); }
+@keyframes pulse-play {
+  0% { box-shadow: 0 0 0 0 rgba(45, 139, 78, 0.4); }
+  70% { box-shadow: 0 0 0 20px rgba(45, 139, 78, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(45, 139, 78, 0); }
+}
+.play-btn svg { width: 28px; height: 28px; fill: var(--white); margin-left: 4px; }
+.video-wrap .video-label {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 8px;
+}
+.hero-stat {
+  text-align: center;
+  padding: 16px 8px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.hero-stat .stat-number {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1.1;
+}
+.hero-stat .stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+/* ============================================
+   SYMPTOMS SECTION
+   ============================================ */
+.symptoms {
+  background: var(--cream-dark);
+  position: relative;
+}
+.symptoms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+}
+.symptom-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+.symptom-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.symptom-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 50%;
+  background: rgba(194, 59, 34, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.symptom-card h4 {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+.symptom-card p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.symptoms-reveal {
+  text-align: center;
+  margin-top: 28px;
+  padding: 28px;
+  background: rgba(194, 59, 34, 0.06);
+  border: 1px solid rgba(194, 59, 34, 0.15);
+  border-radius: var(--radius);
+}
+.symptoms-reveal p {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  color: var(--red-danger);
+  line-height: 1.4;
+}
+
+@media (max-width: 520px) {
+  .symptoms-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   DARK SECTIONS
+   ============================================ */
+.dark-section {
+  background: var(--navy);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.dark-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 168, 78, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.dark-section h2, .dark-section h3 { color: var(--white); }
+
+/* ============================================
+   RATIO BAR VISUAL
+   ============================================ */
+.ratio-visual {
+  margin: 40px 0;
+}
+.ratio-bar-wrap {
+  margin-bottom: 28px;
+}
+.ratio-bar-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.ratio-bar-label span {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.ratio-bar {
+  height: 44px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.ratio-bar-fill {
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--white);
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ratio-bar-fill.bar-bad {
+  background: linear-gradient(90deg, var(--red-danger), #E05A45);
+  width: 0;
+}
+.ratio-bar-fill.bar-bad.animated { width: 92%; }
+
+.ratio-bar-fill.bar-good {
+  background: linear-gradient(90deg, var(--green-health), var(--green-light));
+  width: 0;
+}
+.ratio-bar-fill.bar-good.animated { width: 20%; }
+
+/* ============================================
+   COMPARISON TABLE
+   ============================================ */
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin: 32px 0;
+}
+.comparison-table th {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.5);
+  text-align: left;
+  padding: 0 16px 8px;
+}
+.comparison-table td {
+  padding: 16px;
+  background: rgba(255,255,255,0.05);
+  font-size: 0.9rem;
+}
+.comparison-table tr td:first-child {
+  border-radius: 8px 0 0 8px;
+  font-weight: 600;
+}
+.comparison-table tr td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.comparison-table .row-highlight td {
+  background: rgba(45, 139, 78, 0.15);
+  border-top: 2px solid var(--green-health);
+  border-bottom: 2px solid var(--green-health);
+}
+.comparison-table .row-highlight td:first-child {
+  border-left: 2px solid var(--green-health);
+}
+.comparison-table .row-highlight td:last-child {
+  border-right: 2px solid var(--green-health);
+}
+.comparison-table .badge-fail {
+  background: rgba(194, 59, 34, 0.2);
+  color: var(--red-soft);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.comparison-table .badge-pass {
+  background: rgba(45, 139, 78, 0.2);
+  color: var(--green-glow);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .comparison-table { font-size: 0.8rem; }
+  .comparison-table td, .comparison-table th { padding: 10px 8px; }
+}
+
+/* ============================================
+   SOLUTION / POLYPHENOL SECTION
+   ============================================ */
+.solution-section {
+  background: var(--white);
+  position: relative;
+}
+.solution-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green-health), var(--gold), var(--green-light));
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 40px 0;
+}
+.pillar-card {
+  padding: 32px 24px;
+  border-radius: var(--radius);
+  background: var(--cream);
+  text-align: center;
+  transition: all var(--transition);
+}
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.pillar-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--green-health);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.pillar-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.pillar-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .pillar-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   PROTOCOL SECTION
+   ============================================ */
+.protocol {
+  background: var(--cream-dark);
+}
+.timeline {
+  position: relative;
+  padding-left: 48px;
+  margin: 40px 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--red-danger), var(--gold), var(--green-health));
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -38px;
+  top: 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--white);
+}
+.timeline-item:nth-child(1) .timeline-dot { background: var(--red-danger); }
+.timeline-item:nth-child(2) .timeline-dot { background: var(--amber); }
+.timeline-item:nth-child(3) .timeline-dot { background: var(--green-health); }
+
+.timeline-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.timeline-item p {
+  font-size: 0.92rem;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+/* ============================================
+   SOCIAL PROOF BAR
+   ============================================ */
+.proof-bar {
+  background: var(--green-health);
+  padding: 40px 0;
+}
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+.proof-item .proof-num {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+.proof-item .proof-label {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+@media (max-width: 480px) {
+  .proof-grid { grid-template-columns: 1fr; gap: 20px; }
+}
+
+/* ============================================
+   FAQ SECTION
+   ============================================ */
+.faq-section { background: var(--cream); }
+
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 24px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.faq-question::after {
+  content: '+';
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+.faq-item.open .faq-question::after {
+  content: '−';
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding: 0 24px 20px;
+}
+.faq-answer p {
+  font-size: 0.92rem;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+/* ============================================
+   FINAL CTA SECTION
+   ============================================ */
+.final-cta {
+  background: var(--navy);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(45, 139, 78, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(200, 168, 78, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+.final-cta h2 { margin-bottom: 16px; }
+.final-cta .subtitle {
+  color: rgba(255,255,255,0.7);
+  margin: 0 auto 36px;
+  max-width: 560px;
+}
+.final-cta .btn-primary {
+  font-size: 1.2rem;
+  padding: 22px 52px;
+}
+.final-guarantee {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.82rem;
+}
+.final-guarantee svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--gold);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background: #060E1A;
+  padding: 32px 0;
+  text-align: center;
+}
+footer p {
+  color: rgba(255,255,255,0.3);
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+
+/* ============================================
+   EXTRA: OXIDATION VISUAL
+   ============================================ */
+.oxidation-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 36px 0;
+}
+.ox-step {
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.ox-step .ox-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(194, 59, 34, 0.2);
+  color: var(--red-soft);
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+.ox-step .ox-icon { font-size: 2rem; margin-bottom: 10px; }
+.ox-step h4 {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.ox-step p {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+  .oxidation-steps { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   CALLOUT BOX
+   ============================================ */
+.callout {
+  border-left: 4px solid var(--gold);
+  background: rgba(200, 168, 78, 0.06);
+  padding: 24px 28px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 28px 0;
+}
+.callout p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+.callout strong { color: var(--navy); }
+
+.callout-dark {
+  border-left: 4px solid var(--gold);
+  background: rgba(200, 168, 78, 0.08);
+  padding: 24px 28px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 28px 0;
+}
+.callout-dark p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+}
+
+/* ============================================
+   SPACER / DIVIDER
+   ============================================ */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 24px 0;
+}
+.divider-center {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 24px auto;
+}
+
+
+
+
+/* ============================================
+   HERO COMPACT VIDEO + MODAL
+   ============================================ */
+.hero-video-cta {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  font-weight: 700;
+  color: var(--red-danger);
+  animation: pulse-text 2s ease-in-out infinite;
+}
+@keyframes pulse-text {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.hero-video-cta .cta-arrow {
+  display: inline-block;
+  animation: bounce-right 1.5s ease-in-out infinite;
+}
+@keyframes bounce-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
+.video-compact {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--navy);
+  aspect-ratio: auto;
+  height: 160px;
+  margin: 8px auto 0;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+}
+.video-compact:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-lg);
+}
+.video-compact .video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(10,22,40,0.8), rgba(10,22,40,0.6));
+  transition: background 0.3s ease;
+}
+.video-compact:hover .video-overlay {
+  background: linear-gradient(135deg, rgba(10,22,40,0.65), rgba(10,22,40,0.45));
+}
+.video-compact .play-btn {
+  width: 52px;
+  height: 52px;
+}
+.video-compact .video-label {
+  font-size: 0.72rem;
+}
+
+/* VIDEO MODAL */
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  cursor: pointer;
+}
+.video-modal.active {
+  display: flex;
+}
+.video-modal-inner {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  cursor: default;
+}
+.video-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: var(--white);
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+.video-modal-close:hover {
+  background: rgba(255,255,255,0.25);
+}
+.video-modal-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: rgba(255,255,255,0.7);
+}
+.video-modal-placeholder .play-btn {
+  width: 80px;
+  height: 80px;
+}
+.video-modal-placeholder span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   HERO SPLIT LAYOUT
+   ============================================ */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.hero-left { padding-top: 2px; padding-right: 16px; }
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.hero-study-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 8px;
+  padding: 7px 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+.hero-study-btn:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--teal);
+}
+.hero-study-btn.placeholder {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.hero-study-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+.hero-study-btn .hsb-text {
+  flex: 1;
+}
+.hero-study-btn .hsb-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.35;
+}
+.hero-study-btn .hsb-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--teal);
+  margin-top: 2px;
+}
+.hero-study-btn.placeholder .hsb-tag {
+  color: var(--text-muted);
+}
+.hero-study-btn .hsb-arrow {
+  font-size: 1rem;
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+}
+.hero-study-btn:hover .hsb-arrow {
+  transform: translateX(3px);
+  color: var(--teal);
+}
+.hero-studies-label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* ============================================
+   STUDIES GRID
+   ============================================ */
+.studies-section {
+  background: var(--white);
+  position: relative;
+}
+.studies-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--teal), var(--gold));
+}
+.studies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+.study-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all var(--transition);
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: inherit;
+  min-height: 180px;
+}
+.study-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--teal);
+}
+.study-card.placeholder {
+  opacity: 0.45;
+  pointer-events: none;
+}
+.study-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.study-icon.icon-red { background: rgba(194,59,34,0.1); }
+.study-icon.icon-green { background: rgba(45,139,78,0.1); }
+.study-icon.icon-teal { background: rgba(26,122,109,0.1); }
+.study-icon.icon-gold { background: rgba(200,168,78,0.15); }
+.study-icon.icon-navy { background: rgba(10,22,40,0.08); }
+.study-icon.icon-purple { background: rgba(120,80,160,0.1); }
+.study-card h4 {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+}
+.study-card .study-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.study-card .study-tag::after {
+  content: '→';
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+}
+.study-card:hover .study-tag::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 700px) {
+  .studies-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .studies-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   HERO-TO-SYMPTOMS DIVIDER
+   ============================================ */
+.hero-to-symptoms-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  background: linear-gradient(to bottom, var(--cream), var(--cream-dark));
+  position: relative;
+}
+.hero-to-symptoms-divider .divider-line {
+  flex: 1;
+  max-width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  border-radius: 2px;
+}
+.hero-to-symptoms-divider .divider-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  box-shadow: 0 2px 12px rgba(200,168,78,0.2);
+}
+
+/* Bottom padding for sticky bar */
+/* Hide sections for compact layout */
+.hero-to-symptoms-divider { display: none !important; }
+.hero-stats { display: none !important; }
+.symptoms.section-pad { padding: 6px 0 10px !important; }
+.symptoms-reveal { display: none; }
+.symptoms .container { max-width: 1200px !important; }
+.symptoms .headline-lg { font-size: 1.5rem !important; margin-top: 4px !important; }
+.symptoms .subtitle { font-size: 0.78rem !important; margin-top: 4px !important; margin-bottom: 4px !important; line-height: 1.4 !important; }
+.symptoms .label-sm { font-size: 0.65rem !important; }
+.symptom-card h4 { font-size: 0.92rem !important; }
+.symptom-card p { font-size: 0.82rem !important; }
+.symptom-card { padding: 10px 12px !important; gap: 10px !important; }
+.symptom-icon { width: 28px !important; height: 28px !important; min-width: 28px !important; font-size: 1.1rem !important; }
+
+/* Floating buy button */
+.floating-buy{position:fixed;right:20px;bottom:100px;z-index:999}
+.floating-buy a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--green-health);color:var(--white);padding:16px 28px;border-radius:60px;text-decoration:none;font-weight:700;font-size:0.9rem;letter-spacing:0.03em;box-shadow:0 8px 32px rgba(45,139,78,0.4);transition:all var(--transition);white-space:nowrap}
+.floating-buy a:hover{background:#238B4A;transform:translateY(-2px);box-shadow:0 12px 40px rgba(45,139,78,0.5)}
+
+body { padding-bottom: 80px; }
+</style>
+</head>
+<body>
+
+<!-- ============================================
+     TOP BAR
+     ============================================ -->
+<div class="top-bar">
+  TAKING A QUALITY OMEGA 3 CORRECTS THE RATIO AND IMPROVES YOUR HEALTH
+  <span style="margin-left:12px;display:inline-flex;align-items:center;background:rgba(255,255,255,0.08);border-radius:16px;padding:2px;"><a href="../index.html" style="padding:2px 9px;font-size:0.72rem;font-weight:600;color:rgba(255,255,255,0.5);text-decoration:none;">PT</a><span style="padding:2px 9px;font-size:0.72rem;font-weight:700;background:rgba(200,168,78,0.85);color:#0A1628;border-radius:14px;">EN</span></span>
+</div>
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero" id="hero">
+  <div class="container-wide">
+
+    <div class="hero-split">
+      <div class="hero-left">
+
+        <h1 class="headline-xl" style="margin-bottom:4px; text-align:center;">
+          LEARN HOW TO LIVE<br>LONGER AND BETTER
+        </h1>
+
+        <p class="subtitle" style="font-size:clamp(0.9rem,2vw,1.1rem); font-weight:600; color:var(--navy); margin-bottom:6px; line-height:1.4; text-align:center;">
+          Taking a quality omega-3 at the right dose will change your health for the better
+        </p>
+
+        <div class="hero-video-cta" style="margin-top:4px;">
+          <span class="cta-arrow">▶</span> WATCH THE VIDEO: 3 minutes that will change the way you see your health.
+        </div>
+
+        <div class="video-compact" id="videoCompact" style="background: url('../images/video-thumb-heart.jpg') center/cover no-repeat;">
+          <div class="video-overlay">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+            <span class="video-label">WATCH NOW</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <p class="hero-studies-label" style="line-height:1.4;">See how Omega 3 helps improve almost everything in your health</p>
+
+        <a href="presentation-health-conditions.html" target="_blank" rel="noopener" class="hero-study-btn" style="background:var(--navy);border:2px solid var(--gold);color:var(--white);">
+          <div class="hero-study-icon" style="background:rgba(200,168,78,0.25);font-size:1.4rem;">⭐</div>
+          <div class="hsb-text">
+            <div class="hsb-title" style="color:var(--white);font-size:0.92rem;">Health conditions influenced by the omega-6:3 ratio</div>
+            <div class="hsb-tag" style="color:var(--gold);">View presentation</div>
+          </div>
+          <span class="hsb-arrow" style="color:var(--gold);">→</span>
+        </a>
+
+        <a href="presentation-inflammation.html" target="_blank" rel="noopener" class="hero-study-btn">
+          <div class="hero-study-icon" style="background:rgba(194,59,34,0.1);">🔥</div>
+          <div class="hsb-text">
+            <div class="hsb-title">CHRONIC INFLAMMATION</div>
+            <div class="hsb-tag">View presentation</div>
+          </div>
+          <span class="hsb-arrow">→</span>
+        </a>
+
+        <a href="presentation-athletic-performance.html" target="_blank" rel="noopener" class="hero-study-btn">
+          <div class="hero-study-icon" style="background:rgba(45,139,78,0.1);">🏋️</div>
+          <div class="hsb-text">
+            <div class="hsb-title">ATHLETES & PERFORMANCE</div>
+            <div class="hsb-tag">View presentation</div>
+          </div>
+          <span class="hsb-arrow">→</span>
+        </a>
+
+        <a href="presentation-cardiology.html" target="_blank" rel="noopener" class="hero-study-btn">
+          <div class="hero-study-icon" style="background:rgba(26,122,109,0.1);">❤️</div>
+          <div class="hsb-text">
+            <div class="hsb-title">YOUR HEART</div>
+            <div class="hsb-tag">View presentation</div>
+          </div>
+          <span class="hsb-arrow">→</span>
+        </a>
+
+        <a href="presentation-brain.html" target="_blank" rel="noopener" class="hero-study-btn">
+          <div class="hero-study-icon" style="background:rgba(59,130,246,0.12);">🧠</div>
+          <div class="hsb-text">
+            <div class="hsb-title">YOUR BRAIN</div>
+            <div class="hsb-tag">View presentation</div>
+          </div>
+          <span class="hsb-arrow">→</span>
+        </a>
+
+        <a href="presentation-dermatology.html" target="_blank" rel="noopener" class="hero-study-btn">
+          <div class="hero-study-icon" style="background:rgba(10,22,40,0.08);">✨</div>
+          <div class="hsb-text">
+            <div class="hsb-title">SKIN & AGING</div>
+            <div class="hsb-tag">View presentation</div>
+          </div>
+          <span class="hsb-arrow">→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- STATS BAR -->
+    <div class="hero-stats fade-up">
+      <div class="hero-stat" style="display:flex;align-items:center;justify-content:center;">
+        <a href="products.html#kit-com-teste" style="display:inline-flex;align-items:center;gap:10px;background:var(--green-health);color:#fff;padding:16px 32px;border-radius:60px;font-family:var(--font-body);font-size:1rem;font-weight:700;text-decoration:none;box-shadow:0 6px 24px rgba(45,139,78,0.35);transition:all 0.3s ease;">Take the Test →</a>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-number">97%</div>
+        <div class="stat-label">Remain deficient with common supplements</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Reach the &lt;3:1 target with the right protocol</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION DIVIDER
+     ============================================ -->
+<div class="hero-to-symptoms-divider">
+  <div class="divider-line"></div>
+  <div class="divider-icon">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" fill="currentColor"/></svg>
+  </div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- ============================================
+     SYMPTOMS — "Sente isto?"
+     ============================================ -->
+<section class="symptoms section-pad" id="sintomas">
+  <div class="container">
+    <span class="label-sm text-red fade-up">YOUR BODY IS TALKING</span>
+    <h2 class="headline-lg fade-up" style="margin-top:12px;">
+      Do you recognize any of these signs?
+    </h2>
+    <p class="subtitle fade-up" style="margin-top:12px;">
+      Most people normalize these symptoms. But none of them are "normal" — they are cellular alarm signals.
+    </p>
+
+    <div class="symptoms-grid">
+      <div class="symptom-card fade-up">
+        <div class="symptom-icon">😩</div>
+        <div>
+          <h4>Constant fatigue</h4>
+          <p>Even sleeping well, the body doesn't recover. Energy simply doesn't come.</p>
+        </div>
+      </div>
+      <div class="symptom-card fade-up">
+        <div class="symptom-icon">🧠</div>
+        <div>
+          <h4>Brain fog</h4>
+          <p>Difficulty concentrating, failing memory, slow reasoning.</p>
+        </div>
+      </div>
+      <div class="symptom-card fade-up">
+        <div class="symptom-icon">🦴</div>
+        <div>
+          <h4>Joint pain</h4>
+          <p>Knees, shoulders, back — a stiffness that doesn't go away with rest.</p>
+        </div>
+      </div>
+      <div class="symptom-card fade-up">
+        <div class="symptom-icon">🪞</div>
+        <div>
+          <h4>Aging skin</h4>
+          <p>Loss of elasticity, dryness, premature wrinkles. Your skin has lost its glow.</p>
+        </div>
+      </div>
+      <div class="symptom-card fade-up">
+        <div class="symptom-icon">💔</div>
+        <div>
+          <h4>Slow recovery</h4>
+          <p>Workouts that used to be easy now take days to recover from.</p>
+        </div>
+      </div>
+      <div class="symptom-card fade-up">
+        <div class="symptom-icon">🔥</div>
+        <div>
+          <h4>Silent inflammation</h4>
+          <p>Swelling, digestive discomfort, a heaviness that won't go away.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="symptoms-reveal fade-up">
+      <p>All these symptoms share the same invisible cause:<br>
+      <strong>Chronic low-grade inflammation.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     THE INVISIBLE ENEMY — Inflammation
+     ============================================ -->
+<section class="dark-section section-pad-lg" id="inimigo">
+  <div class="container">
+    <span class="label-sm text-gold fade-up">THE INVISIBLE THREAT</span>
+    <h2 class="headline-lg fade-up" style="margin-top:12px;">
+      A silent fire burning inside your body
+    </h2>
+
+    <div class="divider fade-up"></div>
+
+    <p class="subtitle fade-up" style="color: rgba(255,255,255,0.75); margin-top:20px;">
+      Your immune system remains activated 24/7 — without you feeling it. It's like running an engine on contaminated oil: spending energy fighting itself.
+    </p>
+
+    <div class="fade-up" style="margin: 32px 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
+      <img src="../images/inflamacao-pele.jpg" alt="Inflamação crónica de baixo grau nas camadas da pele" style="width:100%; display:block; border-radius: var(--radius-lg);">
+    </div>
+
+    <div class="callout-dark fade-up">
+      <p>This subclinical inflammation is at the root of modern metabolic diseases:
+      cardiovascular disease, diabetes, Alzheimer's, cancer and accelerated aging.
+      <strong style="color: var(--gold);">And it's triggered by an imbalance that 95% of the population has.</strong></p>
+    </div>
+
+    <!-- RATIO BARS -->
+    <div class="ratio-visual fade-up" id="ratioBars">
+      <h3 class="headline-md" style="margin-bottom: 24px;">The imbalance nobody told you about</h3>
+
+      <p style="color: rgba(255,255,255,0.65); margin-bottom: 28px; font-size: 0.95rem;">
+        The ratio between Omega-6 fatty acids (pro-inflammatory) and Omega-3 (anti-inflammatory)
+        should be less than 3:1. The global average is <strong style="color: var(--red-soft);">14.8:1</strong>.
+        Your 37 trillion cells are in a chronic state of stress.
+      </p>
+
+      <div class="ratio-bar-wrap">
+        <div class="ratio-bar-label">
+          <span style="color: rgba(255,255,255,0.6);">Ideal Ratio</span>
+          <span style="color: var(--green-light); font-size:1.1rem;">&lt; 3:1</span>
+        </div>
+        <div class="ratio-bar" style="background: rgba(255,255,255,0.06);">
+          <div class="ratio-bar-fill bar-good">3:1</div>
+        </div>
+      </div>
+
+      <div class="ratio-bar-wrap">
+        <div class="ratio-bar-label">
+          <span style="color: rgba(255,255,255,0.6);">Actual Global Average</span>
+          <span style="color: var(--red-soft); font-size:1.1rem;">14.8:1</span>
+        </div>
+        <div class="ratio-bar" style="background: rgba(255,255,255,0.06);">
+          <div class="ratio-bar-fill bar-bad">14.8:1</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 36px;" class="fade-up">
+      <a href="#solucao" class="btn-primary">Discover the Solution →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     THE PARADOX — 97% + Cochrane
+     ============================================ -->
+<section class="section-pad" style="background: var(--cream);" id="paradoxo">
+  <div class="container">
+    <span class="label-sm text-red fade-up">THE 97% PARADOX</span>
+    <h2 class="headline-lg fade-up" style="margin-top:12px;">
+      If you already take omega-3, why are you still deficient?
+    </h2>
+
+    <div class="divider fade-up"></div>
+
+    <p class="subtitle fade-up" style="margin-top:20px;">
+      Data from 1,300,000+ blood tests (Vitas Analytical Services, Norway): <strong>97% of people taking omega-3 supplements remain clinically deficient</strong>.
+    </p>
+
+    <div class="callout fade-up">
+      <p><strong>Cochrane Review (2018) — 112,000+ participants:</strong>
+      "Little or no effect from using standard omega-3 supplements."
+      The highest standard of scientific evidence confirms: common capsules simply don't work.</p>
+    </div>
+
+    <div class="fade-up" style="margin: 32px 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+      <img src="../images/suplementos-erram-alvo.jpg" alt="Suplementos comuns erram o alvo biológico - de 14.8:1 para 9.9:1 quando o alvo é menos de 3:1" style="width:100%; display:block; border-radius: var(--radius-lg);">
+    </div>
+
+    <p class="subtitle fade-up">
+      People believe they're protected because they swallow a capsule a day.
+      But their cells disagree — and science confirms it.
+    </p>
+
+    <p class="subtitle fade-up" style="margin-top: 20px;">
+      <strong>Why?</strong> Because common capsules don't survive human biology.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================
+     WHY SUPPLEMENTS FAIL — Oxidation
+     ============================================ -->
+<section class="dark-section section-pad-lg" id="falha">
+  <div class="container">
+    <span class="label-sm text-gold fade-up">THE INVISIBLE PROBLEM</span>
+    <h2 class="headline-lg fade-up" style="margin-top:12px;">
+      The omega-3 graveyard: stomach acid
+    </h2>
+
+    <div class="divider fade-up"></div>
+
+    <p style="color: rgba(255,255,255,0.7); margin-top: 20px; font-size: 0.95rem; line-height:1.7;" class="fade-up">
+      Refined fish oil is highly vulnerable. When ingested in capsules
+      without protection, it's destroyed before reaching your cells.
+    </p>
+
+    <div class="fade-up" style="margin: 36px 0; border-radius: var(--radius-lg); overflow: hidden; background: rgba(255,255,255,0.04); padding: 24px; border: 1px solid rgba(255,255,255,0.08);">
+      <img src="../images/oxidacao-3-passos.jpg" alt="3 passos da oxidação: ingestão, destruição gástrica, oxidação celular" style="width:100%; display:block; border-radius: var(--radius);">
+    </div>
+
+    <div class="callout-dark fade-up">
+      <p>This is why reducing your ratio from 14.8 to 9.9 with common capsules <strong style="color:var(--red-soft);">isn't a victory — it's missing the biological target</strong>. The target is &lt;3:1, and without oxidation protection, you'll never get there.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     COST COMPARISON
+     ============================================ -->
+<section class="section-pad" style="background: var(--cream-dark);" id="custo">
+  <div class="container">
+    <span class="label-sm text-navy fade-up">THE HIDDEN REALITY ON LABELS</span>
+    <h2 class="headline-lg fade-up" style="margin-top:12px;">
+      The true cost of inefficiency
+    </h2>
+
+    <div class="divider fade-up"></div>
+
+    <p class="subtitle fade-up" style="margin-top:20px;">
+      When we equalize all supplements to the same clinical dose of EPA+DHA
+      (1,638 mg, equivalent to 10 ml for a 70 kg person), the truth emerges:
+    </p>
+
+    <div class="fade-up" style="margin: 32px 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); background: var(--white); padding: 20px;">
+      <img src="../images/comparacao-capsulas.jpg" alt="Quantas cápsulas são necessárias para igualar 1 dose de Zinzino BalanceOil+" style="width:100%; border-radius: var(--radius);">
+    </div>
+
+    <div class="fade-up" style="margin: 24px 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); background: var(--white); padding: 20px;">
+      <img src="../images/comparacao-custo.jpg" alt="Comparação de custo mensal equalizado para mesma dose EPA+DHA" style="width:100%; border-radius: var(--radius);">
+    </div>
+
+    <div class="callout fade-up">
+      <p><strong>The most expensive product in the world is the one that doesn't work.</strong>
+      Buying capsules at €20/month seems like a bargain — but swallowing capsules without polyphenols,
+      destroyed by stomach acid, is a 100% loss on your investment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SOCIAL PROOF BAR
+     ============================================ -->
+<section class="proof-bar">
+  <div class="container-wide">
+    <div class="proof-grid fade-up">
+      <div class="proof-item">
+        <div class="proof-num">1.3M+</div>
+        <div class="proof-label">Independent blood tests</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">98%</div>
+        <div class="proof-label">Reach the &lt;3:1 target in 120 days</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num">750 mg/kg</div>
+        <div class="proof-label">Olive polyphenols (vs. 100 mg/kg standard)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     THE SOLUTION — Polyphenol Armor
+     ============================================ -->
+<section class="solution-section section-pad-lg" id="solucao">
+  <div class="container">
+    <span class="label-sm text-green fade-up">THE SOLUTION EXISTS</span>
+    <h2 class="headline-lg fade-up" style="margin-top:12px;">
+      Nature's engineering: precision cellular nutrition
+    </h2>
+
+    <div class="divider fade-up"></div>
+
+    <p class="subtitle fade-up" style="margin-top:20px;">
+      BalanceOil+ is not "fish oil". It's a cellular delivery system based on
+      polyphenol science — the same antioxidants that protect fish in the ocean.
+    </p>
+
+    <div class="pillar-grid fade-up">
+      <div class="pillar-card">
+        <div class="pillar-num">1</div>
+        <h4>Polyphenol Armor</h4>
+        <p>Olive oil from early-harvest olives with 750 mg/kg of polyphenols (7.5x more than premium standard). They wrap and protect EPA and DHA from gastric oxidation.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">2</div>
+        <h4>Weight-Based Dosing</h4>
+        <p>0.15 ml per kg of body weight. There's no "one-size-fits-all" dose — your biology is unique, your dosage should be too.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">3</div>
+        <h4>EPA:DHA Ratio 2:1</h4>
+        <p>The clinically optimized ratio for maximum anti-inflammatory action. Resolves cell membrane imbalance in 120 days.</p>
+      </div>
+    </div>
+
+    <div class="callout fade-up" style="border-left-color: var(--green-health); background: rgba(45,139,78,0.05);">
+      <p><strong>The result:</strong> intact and effective absorption directly into the membranes of your
+      37 trillion cells. The body stops fighting inflammation and focuses on repair,
+      cognition and vitality. It's not magic — it's biochemistry.</p>
+    </div>
+
+    <div style="text-align:center; margin-top: 32px;" class="fade-up">
+      <a href="products.html#top" class="btn-primary" target="_blank" rel="noopener">
+        I Want BalanceOil+ →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     THE PROTOCOL — 120 Days
+     ============================================ -->
+<section class="protocol section-pad" id="protocolo">
+  <div class="container">
+    <span class="label-sm text-navy fade-up">THE 120-DAY PROTOCOL</span>
+    <h2 class="headline-lg fade-up" style="margin-top:12px;">
+      Don't trust. Verify.
+    </h2>
+
+    <div class="divider fade-up"></div>
+
+    <p class="subtitle fade-up" style="margin-top: 20px;">
+      Human biology has its own timer. A red blood cell (erythrocyte)
+      lives approximately 120 days. This is the time needed to completely renew
+      the composition of your cell membranes.
+    </p>
+
+    <div class="timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-dot">1</div>
+        <h4>Day 1 — Take the BalanceTest</h4>
+        <p>A simple finger prick. Discover your exact inflammatory ratio, no illusions.
+        Results arrive in 12 business days with analysis of 11 biomarkers.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">2</div>
+        <h4>Day 2 to 120 — Start the Protocol</h4>
+        <p>Take the correct dosage of BalanceOil+ for your body weight. The polyphenols
+        protect the omega-3 and ensure cellular delivery. No capsules, no waste.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">3</div>
+        <h4>Day 120 — Re-Test and Prove It</h4>
+        <p>Take a new BalanceTest. Prove your own biological transformation with real numbers.
+        98% of people reach a ratio below 3:1.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 16px;" class="fade-up">
+      <a href="products.html#top" class="btn-primary" target="_blank" rel="noopener">
+        Take My BalanceTest →
+      </a>
+      <p style="margin-top:12px; font-size:0.82rem; color:var(--text-muted);">
+        Independent analysis by Vitas Analytical Services, Norway
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FAQ
+     ============================================ -->
+<section class="faq-section section-pad" id="faq">
+  <div class="container">
+    <h2 class="headline-lg text-center fade-up">Frequently Asked Questions</h2>
+    <div class="divider-center fade-up"></div>
+
+    <div style="margin-top: 36px;">
+      <div class="faq-item fade-up">
+        <button class="faq-question">Is it safe? Any side effects?</button>
+        <div class="faq-answer">
+          <p>BalanceOil+ is a functional food, not a medicine. It's made from wild fish oil,
+          extra-virgin olive oil rich in polyphenols, and vitamin D3. No side effects
+          have been reported. Suitable for adults and children (with weight-adjusted dosage).</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question">How do I know it will work for me?</button>
+        <div class="faq-answer">
+          <p>That's what the BalanceTest is for. You don't need to believe — you can prove it. Take the test
+          first, start the 120-day protocol, and re-test. Your own blood biomarkers
+          will confirm the result. 98% of people reach the &lt;3:1 target.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question">Isn't €42/month expensive?</button>
+        <div class="faq-answer">
+          <p>Compared to what? Solgar Omega-3 700 costs €51.09/month for the same EPA+DHA dose —
+          and has no polyphenols, oxidizes in the stomach, and has no proven results. BioActivo Cardio
+          costs €42.62/month and requires 6 capsules/day. BalanceOil+ costs the same or less,
+          with proven results in 98% of cases. The most expensive product is the one that doesn't work.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question">What does it taste like? Is it hard to take?</button>
+        <div class="faq-answer">
+          <p>Available in several flavors (orange-lemon-mint, lemon, vanilla). It's a liquid taken
+          straight or mixed with yogurt, juice, or a smoothie. Most people prefer taking it
+          in the morning with breakfast. No capsules, no reflux.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question">What are polyphenols and why are they important?</button>
+        <div class="faq-answer">
+          <p>They are nature's most powerful antioxidants, extracted from early-harvest olives.
+          In nature, they protect fish from oxidation in the ocean. In BalanceOil+,
+          they do exactly the same: they wrap EPA and DHA like biological armor, protecting them
+          from heat and gastric acid. This ensures omega-3 reaches your cells intact.
+          No pharmacy competitor has this technology.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question">Can children and pregnant women take it?</button>
+        <div class="faq-answer">
+          <p>Yes. Dosage is adjusted by weight (0.15 ml/kg). For children there's the
+          BalanceOil+ Tutti Frutti version. Pregnant and nursing women especially benefit from DHA
+          for the baby's brain development. We always recommend consulting your doctor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FINAL CTA
+     ============================================ -->
+<section class="final-cta section-pad-lg" id="cta-final">
+  <div class="container" style="position:relative; z-index:1;">
+    <span class="label-sm text-gold fade-up">THE NEXT STEP IS LOGICAL</span>
+    <h2 class="headline-xl text-white fade-up" style="margin-top:16px;">
+      Stop guessing.<br>Start proving.
+    </h2>
+    <p class="subtitle fade-up">
+      Discover your real inflammatory ratio. Correct it in 120 days.
+      Prove it with a re-test. It's science, not a promise.
+    </p>
+    <div class="fade-up">
+      <a href="products.html#top" class="btn-primary" target="_blank" rel="noopener">
+        Start the Protocol Now →
+      </a>
+    </div>
+    <div class="final-guarantee fade-up">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+      <span>Independent laboratory analysis — Vitas Analytical Services, Norway</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     STICKY CTA BAR
+     ============================================ -->
+<div class="sticky-cta" id="stickyCta">
+  <span class="cta-text">97% remain deficient. You don't have to be one of them.</span>
+  <a href="products.html#top" class="btn-primary" target="_blank" rel="noopener">
+    Start Now →
+  </a>
+</div>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer>
+  <div class="container">
+    <p>
+      © 2026 Balanced Test — All rights reserved.<br>
+      Informational content based on independent scientific research.<br>
+      Individual results may vary. Always consult your doctor.
+    </p>
+  </div>
+</footer>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Sticky CTA bar
+const hero = document.getElementById('hero');
+const sticky = document.getElementById('stickyCta');
+
+if (hero && sticky) {
+  const stickyObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      sticky.classList.toggle('active', !e.isIntersecting);
+    });
+  }, { threshold: 0 });
+  stickyObs.observe(hero);
+}
+
+// Ratio bars animation
+const ratioBars = document.getElementById('ratioBars');
+if (ratioBars) {
+  const ratioObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.ratio-bar-fill').forEach(bar => {
+          bar.classList.add('animated');
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  ratioObs.observe(ratioBars);
+}
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const wasOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    // Toggle clicked
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if (href === '#' || href.includes('LINK_PARTNER')) return;
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// Compact video -> open modal
+var videoCompact = document.getElementById('videoCompact');
+var videoModal = document.getElementById('videoModal');
+var videoModalClose = document.getElementById('videoModalClose');
+
+if (videoCompact && videoModal) {
+  videoCompact.addEventListener('click', () => {
+    videoModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    var vp = document.getElementById('videoPlayer');
+    if (vp) vp.play();
+  });
+}
+
+// Close modal
+if (videoModalClose && videoModal) {
+  videoModalClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    videoModal.classList.remove('active');
+    document.body.style.overflow = '';
+    var vp = document.getElementById('videoPlayer');
+    if (vp) { vp.pause(); vp.currentTime = 0; }
+  });
+}
+
+if (videoModal) {
+  videoModal.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) {
+      videoModal.classList.remove('active');
+      document.body.style.overflow = '';
+      var vp = document.getElementById('videoPlayer');
+      if (vp) { vp.pause(); vp.currentTime = 0; }
+    }
+  });
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && videoModal) {
+    videoModal.classList.remove('active');
+    document.body.style.overflow = '';
+    var vp = document.getElementById('videoPlayer');
+    if (vp) { vp.pause(); vp.currentTime = 0; }
+  }
+});
+
+}); // end DOMContentLoaded
+</script>
+
+
+<!-- VIDEO MODAL -->
+<div class="floating-buy">
+  <a href="products.html#top" target="_blank" rel="noopener">BUY BALANCE OIL+</a>
+</div>
+
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-inner" id="videoModalInner">
+    <button class="video-modal-close" id="videoModalClose">✕</button>
+    <video id="videoPlayer" controls playsinline style="width:100%;height:100%;border-radius:var(--radius-lg);background:#000;">
+      <source src="The_Hidden_Truth_About_Omega-3.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+</div>
+
+<!-- FLOATING LANGUAGE SWITCHER -->
+<div style="position:fixed;top:48px;right:16px;z-index:9998;display:flex;align-items:center;background:rgba(10,22,40,0.92);border-radius:24px;box-shadow:0 4px 16px rgba(0,0,0,0.25);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(200,168,78,0.15);padding:3px;font-family:'DM Sans',sans-serif;">
+  <a href="../index.html" style="padding:5px 12px;font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.03em;transition:color 0.3s;">PT</a>
+  <span style="padding:5px 12px;font-size:0.78rem;font-weight:700;background:rgba(200,168,78,0.85);color:#0A1628;border-radius:20px;letter-spacing:0.03em;">EN</span>
+</div>
+
+</body>
+</html>
