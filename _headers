@@ -1,4 +1,66 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+
+/assets/*
+  Cache-Control: public, max-age=86400
+
 /*.pdf
   Content-Type: application/pdf
   Content-Disposition: inline
   X-Frame-Options: SAMEORIGIN
+
+/legacy/*
+  X-Robots-Tag: noindex, follow
+
+/apresentacao-absorcao-omega3.html
+  X-Robots-Tag: noindex, follow
+/apresentacao-cardiologia.html
+  X-Robots-Tag: noindex, follow
+/apresentacao-cerebro.html
+  X-Robots-Tag: noindex, follow
+/apresentacao-condicoes-saude.html
+  X-Robots-Tag: noindex, follow
+/apresentacao-dermatologia.html
+  X-Robots-Tag: noindex, follow
+/apresentacao-desempenho-fisico.html
+  X-Robots-Tag: noindex, follow
+/apresentacao-inflamacao.html
+  X-Robots-Tag: noindex, follow
+/balanced-test-produtos.html
+  X-Robots-Tag: noindex, follow
+/porque-balanceoil.html
+  X-Robots-Tag: noindex, follow
+
+/
+  Link: <https://recuperandoasaude.pt/>; rel="canonical", <https://recuperandoasaude.pt/>; rel="alternate"; hreflang="pt-PT", <https://recuperandoasaude.pt/en/index.html>; rel="alternate"; hreflang="en"
+/entender/racio-omega-6-3.html
+  Link: <https://recuperandoasaude.pt/entender/racio-omega-6-3.html>; rel="canonical"
+/ciencia/index.html
+  Link: <https://recuperandoasaude.pt/ciencia/index.html>; rel="canonical"
+/ciencia/cardiovascular.html
+  Link: <https://recuperandoasaude.pt/ciencia/cardiovascular.html>; rel="canonical"
+/ciencia/inflamacao.html
+  Link: <https://recuperandoasaude.pt/ciencia/inflamacao.html>; rel="canonical"
+/ciencia/cerebro.html
+  Link: <https://recuperandoasaude.pt/ciencia/cerebro.html>; rel="canonical"
+/ciencia/pele.html
+  Link: <https://recuperandoasaude.pt/ciencia/pele.html>; rel="canonical"
+/ciencia/desempenho.html
+  Link: <https://recuperandoasaude.pt/ciencia/desempenho.html>; rel="canonical"
+/ciencia/condicoes.html
+  Link: <https://recuperandoasaude.pt/ciencia/condicoes.html>; rel="canonical"
+/testar-e-acompanhar.html
+  Link: <https://recuperandoasaude.pt/testar-e-acompanhar.html>; rel="canonical"
+/biblioteca.html
+  Link: <https://recuperandoasaude.pt/biblioteca.html>; rel="canonical"
+/metodologia.html
+  Link: <https://recuperandoasaude.pt/metodologia.html>; rel="canonical"
+/sobre.html
+  Link: <https://recuperandoasaude.pt/sobre.html>; rel="canonical"
+/produtos/index.html
+  Link: <https://recuperandoasaude.pt/produtos/index.html>; rel="canonical"
+/en/index.html
+  Link: <https://recuperandoasaude.pt/en/index.html>; rel="canonical", <https://recuperandoasaude.pt/>; rel="alternate"; hreflang="pt-PT", <https://recuperandoasaude.pt/en/index.html>; rel="alternate"; hreflang="en"
